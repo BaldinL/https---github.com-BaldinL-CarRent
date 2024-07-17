@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оренда Машин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Оренда Машин</h1>
+    </header>
+    <main>
+        <section id="cars-list">
+            <h2>Доступні Машини</h2>
+            <div class="car" data-id="1">
+                <img src="https://cdn.riastatic.com/photosnewr/auto/new_auto_storage/peugeot-2008__2544316-620x465x72.webp" alt="Машина 1">
+                <h3>Peugeot 2008 Allure 2023</h3>
+                <p>Потужність відчувається 
+                    у кожній деталі.
+                     Ззаду погляд притягує контрастна чорна смуга, якащо переливається трьома лініями світлодіодних ліхтарів, наче сліди від пазурів лева.
+                      Як вдень, так і вночі - їх важко не помітити.</p>
+                <button class="rent-btn">Орендувати</button>
+            </div>
+            <div class="car" data-id="2">
+                <img src="car2.jpg" alt="Машина 2">
+                <h3>Машина 2</h3>
+                <p>Опис машини 2</p>
+                <button class="rent-btn">Орендувати</button>
+            </div>
+            <!-- Додати більше машин, якщо потрібно -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Оренда Машин</p>
+    </footer>
+
+    <div id="rent-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Запит на Оренду</h2>
+            <form id="rent-form">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="hidden" id="car-id" name="car-id">
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
